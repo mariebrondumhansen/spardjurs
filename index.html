@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <title>Untitled Document</title>
+<!--her linker jeg til bootstrap via en cdn  en minify udgav, så siden loader hurtigere-->
+<link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <!--her linker jeg til animate.css via en cdn i en minify udgav, så siden loader hurtigere.*/-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 <!--animate on scroll kilde:https://michalsnik.github.io/aos/-->
@@ -11,6 +13,7 @@
 </head>
 <link href="scss/style.css" rel="stylesheet">
 <body>
+<?php include 'header.php';?>
 <nav>
 	<ul>
 		<li><a href="#">Dit liv</a></li>
@@ -21,7 +24,7 @@
 	</ul>
 </nav>
 
-<h1 data-aos="zoom-in">hello world!! vol. 3</h1>
+<h1 data-aos="zoom-in">hello world!! vol. 4</h1>
 <div class="row">
 <div class="col-3" style="background-color: green;">hej </div>
 <div class="col-3" style="background-color: red;"></div>
@@ -31,6 +34,8 @@
 <button class="button ctabtn"><p>jeg er en knap</p></button>
 <div class="col-12 ctabtn" > <p class="ctabtn">hej med dig</p></div>
 <button class="button"><p>knap</p></button>
+
+
 <div class="row">
 <div class="col-12" data-aos="fade-up"
      data-aos-anchor-placement="center-center">
@@ -38,11 +43,103 @@
 </div>
 </div>
 
+
+<!--cta boks der skal ses på alle sider-->
+<aside class="row"> 
+<div class="col-md-6 " style="background-color: green;">
+	<h3 class="text-center">Få nærværende rådgivning - vi er til for dig og din økonomi</h3>
+</div>
+
+
+<div class="col-md-6">
+
+	<button class="text-center">Book møde</button>
+	<button>Bliv kunde</button>
+</div>
+
+</aside>
+<!--END-->
+
+<!--footer-->
+<footer>
+<div class="row">
+
+<!--Kontaktinformation-->
+	<div class="col-md-5 text-center" style="background-color: red;"> 
+	<h5>Hovedafdeling</h5>
+	<p>Sparekassen Djursland</p>
+	<!--indsæt logo-->
+	<img src="" alt="">
+	<!--END-->
+	<a href="https://www.google.com/maps/place/Langgade+42,+8961+Alling%C3%A5bro/@56.4830953,10.4464361,17z/data=!3m1!4b1!4m5!3m4!1s0x464e9df64888eb13:0xc30076891f4a0178!8m2!3d56.4830953!4d10.4486248?hl=da-DK42"  target="_blank">Langgadebro 89 42 <br>8961 Allingåbro </a>
+	<br><br>
+	<a href="mailto:mail@spardjurs.dk">mail@spardjurs.dk</a>
+	<br><br>
+	<a href="tel:24853733">+45 24853733</a>
+	<br><br> 
+	<p>Sparekassen Djursland er under tilsyn af finanstilsynet.</p>
+	<br><br> 
+	<p>CVR:70558114</p>
+	<!--FB logo-->
+	<img src="" alt="">
+	<!--END-->
+	</div>
+	
+	
+	<!--END-->
+	<!--Menu i bunden-->
+	<div class="col-md-7 "> 
+	<div class="row ">
+	<div class="col-md-3 offset-1">
+		<h5 class="text-center">Om banken</h5>
+		<nav class="col-12 text-left ">
+  		<ul> 
+  		 <li> <a href="#">Vores historie</a></li>
+  		 <li><a href="#">Sponsorater</a></li>
+  		 <li><a href="#">Lokale intiativer</a></li>
+  		 <li><a href="#">Karriere</a></li>
+  		</ul>
+  	</nav>
+		</div>
+  <div class="col-md-4">
+  	<h5 class="text-center">Vigtige genveje</h5>
+  	<nav class="col-12 text-left ">
+  		<ul> 
+  		 <li> <a href="#">Spær kort</a></li>
+  		 <li><a href="#">Produkter og låneberegner</a></li>
+  		 <li><a href="#">Book møder</a></li>
+  		 <li><a href="#">Netbank</a></li>
+  		 <li><a href="#">Find afdeling</a></li>
+  		</ul>
+  	</nav>
+  </div>
+  
+  <div class="col-md-3">
+  	<h5 class="text-center">Populært indenfor privat</h5>
+  	<nav class="col-12 text-left ">
+  		<ul> 
+  		 <li> <a href="#">Spær kort</a></li>
+  		 <li><a href="#">Produkter og låneberegner</a></li>
+  		 <li><a href="#">Book møder</a></li>
+  		 <li><a href="#">Netbank</a></li>
+  		 <li><a href="#">Find afdeling</a></li>
+  		</ul>
+  	</nav>
+  </div>
+  </div>
+	  </div>
+	  <!--END-->
+</div>
+ </footer>
+ <!--END-->
+ 
+<?php include 'footer.php';?>
+
+
 <!--animate on scroll kilde: https://michalsnik.github.io/aos/-->
 <!--<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
 </script>-->
-
 </body>
 </html>
