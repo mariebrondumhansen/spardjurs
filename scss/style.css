@@ -1,4 +1,7 @@
+@charset "UTF-8";
 /* Scss Document */
+/*Her difinere jeg mine scass variabler*/
+/*END*/
 body {
   font: 100% Helvetica, sans-serif;
   color: #62606f;
@@ -8,11 +11,12 @@ body {
   color: #62606f; }
 
 .ctabtn {
-  background-color: #cf06e;}
+  background-color: #cf06e; }
 
 .button:hover {
   background-color: red; }
 
+/*Her benytter jeg nesting til at style min navigationsmenu - dette g├©r det mere intuitivt at style min menulinjen fordi jeg arbejder med parent og child elementer. Ligesom jeg g├©re det i min html kode.  */
 nav ul {
   margin: 0;
   padding: 0;
@@ -23,5 +27,5 @@ nav a {
   display: block;
   padding: 6px 12px;
   text-decoration: none; }
-
-/*# sourceMappingURL=style.css.map */
+nav a:hover {
+  background-color: green; }
