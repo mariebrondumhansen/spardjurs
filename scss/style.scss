@@ -1,0 +1,47 @@
+/* Scss Document */
+/*Her difinere jeg mine scass variabler*/
+$font-stack: Helvetica, sans-serif;
+$brand1: #62606f;
+$brand1-15: #41404a; 
+$brand1-25: #2b2a30; 
+$brand2: #62606f;
+$brand3: #737373; 
+$cta: #cf06e;
+$fontcolor: #ffffff; 
+$secfontcolor: #4a4a4a;
+$bg-color: #f5f5f5;
+
+
+body {
+  font: 100% $font-stack;
+  color: $brand1;
+  background-color: $bg-color;
+}
+
+.x {color: $brand1;}
+.ctabtn{background-color: $cta;}
+
+.button {
+  &:visited { }
+  &:hover {background-color: red; }
+  &:active { }
+}
+/*Her benytter jeg nesting til at style min navigationsmenu - dette gør det mere intuitivt at style min menulinjen fordi jeg arbejder med parent og child elementer. Ligesom jeg gøre det i min html kode.  */
+nav { 
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+	a:hover{
+		background-color: green;
+	}
+}
