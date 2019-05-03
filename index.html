@@ -2,19 +2,62 @@
 <html lang="da">
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
+<!--her indsætter jeg google analytics på sitet-->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106293419-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-106293419-3');
+</script>
+<!--end--> 
+
+<title>Velkommen til Sparekassen Djursland - hvad kan vi gøre for dig?t</title>
+<!--loading af lato font fra google font-->
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <!--her linker jeg til bootstrap via en cdn  en minify udgav, så siden loader hurtigere-->
 <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <!--her linker jeg til animate.css via en cdn i en minify udgav, så siden loader hurtigere.*/-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 <!--animate on scroll kilde:https://michalsnik.github.io/aos/-->
 <!--<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">-->
-
+<link href="/img/logo/Sparekassen-Djursland---Logo@2x.png" rel="icon" type="image/x-icon"/>
 </head>
 <link href="scss/style.css" rel="stylesheet">
 <body>
+<header>
+	<nav class="nav-secondary-bar blue row" aria-label="secondary navigation"> 
+		<nav class="breadcrumb nav-breadcrumb col-md-4" aria-label="breadcrumb" role="navigation">
+			<ul>
+				<li> <a href="spardjurs.dk/privat">Privat</a></li>
+			</ul>
+		</nav>
+		<div> 
+		<div class="offset-lg-5">
+		<nav>
+		<ul>
+		<li><a href="/om-os" class="nav-secondary-menu__link"><span>Om os</span></a></li>
+		<li><a href="/Privat" class="nav-secondary-menu__link"><span>Privat</span></a></li>
+		<li><a href="/Erhvev" class="nav-secondary-menu__link"><span>Erhvev</span></a></li>
+		</ul>
+		</nav>
+		</div>
+		</div>
+		
+	</nav>
+	
+
+
+
 <!--menu-->
-<nav>
+<nav class="js_desktopnav row offset-1 col-11">
+<div class="main-nav-large_logo">
+	<a href="/index.html">
+		<img src="img/logo/Sparekassen-Djursland---Logo@2x.png" width="250 px" height="px">
+	</a>
+</div>
 	<ul>
 		<li><a href="#">Dit liv</a></li>
 		<li><a href="#">Produkter</a></li>
@@ -23,17 +66,47 @@
 		<li><a href="#">Kontakt</a></li>
 	</ul>
 </nav>
+</header>
 <!--end--> 
 <main>
+<!--forside billede-->
 <div class="row"> 
-<div class="col-md-6" style="background-color: red;">
-	<p>hrj meme </p>
+<div class="offset-1 col-md-5" style="background-color: #62606F;">
+  <h1 class="text-center"> Vi er en Sparekasse med rødderne solidt plantet i vores nærområde </h1>
+<button type="button" class="btn btn-lg btn-outline-primary"> Bliv kunde</button>
 </div>
-<div class="col-md-6" style="background-color: blue;">
-	<p>hrj meme </p>
+	<div class="col-md-5" style="background-color: blue;"></div>
+
+
+<!--END-->
+
+	<!--genveje--> 
+	<div class=" col-12 ">
+		 <h2 class="text-center">Lad os hjælpe dig</h2>
+		
+	  <div class="row d-flex justify-content-md-around genveje">
+<div class="">
+<a href="img/stock/minimise-internet-disruption.jpg">
+</a>
+<h3>Produkter og låneberegner</h3>
 </div>
+
+<div class="">
+<h3>Book rådgivingsmøde</h3> 
 </div>
-	
+
+<div class="">
+<h3>Log på netbank</h3>
+</div> 
+
+<div class="">
+<img src="icons/176x176/Lås_Sort.png" height="178px" width="178px"  alt="" />
+<h3>Kontakt os</h3>
+</div>
+
+</div>
+	</div>
+	<!--END-->	
 
 </main>
 <!--cta boks der skal ses på alle sider-->
@@ -57,7 +130,7 @@
 <div class="row">
 
 <!--Kontaktinformation-->
-	<div class="col-md-5 text-center" style="background-color: red;"> 
+	<div class="col-md-5 text-center" style="background-color: #EFEFEF;"> 
 	<h5>Hovedafdeling</h5>
 	<p>Sparekassen Djursland</p>
 	<!--indsæt logo-->
@@ -80,7 +153,7 @@
 	
 	<!--END-->
 	<!--Menu i bunden-->
-	<div class="col-md-7 "> 
+	<div class="col-md-7" style="background-color: #2B2A30;"> 
 	<div class="row ">
 	<div class="col-md-3 offset-1">
 		<h5 class="text-center">Om banken</h5>
@@ -125,13 +198,18 @@
  </footer>
  <!--END-->
  
-<?php include 'footer.php';?>
+<?php include ('include/footer.php');?>
 
-
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<link href="js/scripts.js" rel="script">
 <!--animate on scroll kilde: https://michalsnik.github.io/aos/-->
 <!--<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
 </script>-->
-</body>
+	
+</div></div></body>
 </html>
