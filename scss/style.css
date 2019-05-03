@@ -36,3 +36,9 @@ nav a {
   text-decoration: none; }
 nav a:hover p {
   background-color: green; }
+
+/*styling af dit liv kasser*/
+.life_box{ 
+			height: 200px; ;
+
+}
