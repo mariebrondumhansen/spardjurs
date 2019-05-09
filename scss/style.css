@@ -5,9 +5,8 @@
 h1 {
   color: #FFFFFF;
   font-family: Trim;
-  font-size: 2em;
-  font-weight: 800;
-  line-height: 80px; }
+  font-size: 3em;
+  font-weight: 800; }
 
 h2 {
   font-size: 1.875rem; }
@@ -40,3 +39,8 @@ nav a {
   text-decoration: none; }
 nav a:hover p {
   background-color: green; }
+
+.hero_module_b_text {
+  padding-left: 30%;
+  padding-right: 5%;
+  padding-top: 10%; }
