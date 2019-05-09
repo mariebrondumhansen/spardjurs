@@ -17,11 +17,9 @@ body {
   color: #a70000;
   background-color: #f5f5f5; }
 
+/*her diffinerer jeg classes for brug af brand1 som baggrundsfarve*/
 .brand1-bg {
   background-color: #a70000; }
-
-.brand1 {
-  color: #a70000; }
 
 .ctabtn {
   background-color: #cf06e; }
