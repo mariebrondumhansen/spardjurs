@@ -15,8 +15,12 @@
 <!--end--> 
 
 <title>Velkommen til Sparekassen Djursland - hvad kan vi gøre for dig?t</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--loading af lato font fra google font-->
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<!--her linker jeg til normalizer.css, der hjælper på at skabe en bedre cross browsing ved hjælp af css resets. Dette linkes ind via en cdn  en minify udgav, så siden loader hurtigere. Dette stylesheet-->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
 <!--her linker jeg til bootstrap via en cdn  en minify udgav, så siden loader hurtigere-->
 <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <!--her linker jeg til animate.css via en cdn i en minify udgav, så siden loader hurtigere.*/-->
@@ -25,6 +29,7 @@
 <!--<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">-->
 <link href="/img/logo/Sparekassen-Djursland---Logo@2x.png" rel="icon" type="image/x-icon"/>
 </head>
+<!--looding af compiled css-stylesheet-->
 <link href="scss/style.css" rel="stylesheet">
 <body>
 <header>
@@ -70,14 +75,18 @@
 <!--end--> 
 <main>
 <!--forside billede-->
-<div class="row"> 
-<div class="offset-1 col-md-5" style="background-color: #62606F;">
+
+<div class="row">
+<div class="col-md-6 " style="background-color: #62606F;">
   <h1 class="text-center"> Vi er en Sparekasse med rødderne solidt plantet i vores nærområde </h1>
 <button type="button" class="btn btn-lg btn-outline-primary"> Bliv kunde</button>
 </div>
-	<div class="col-md-5" style="background-color: blue;">
-		
-	</div>
+<div class="col-md-6">
+	<img src="img/local_pic/grenaa_mand_går_med_sit_barn.jpg" class="img-fluid" alt="mand går med sit barn ved vandet i grenaa";/>
+</div>		
+
+
+	
 
 
 <!--END-->
@@ -89,25 +98,26 @@
 		
 	  <div class="row d-flex justify-content-md-around">
 <div class="">
-<img src="" alt="">
+<img src="icons/176x176/Beregner_Sort.png" class="img-fluid mx-auto d-block" alt="">
 <h3>Produkter og låneberegner</h3>
 <button>Produkter</button>
 </div>
 
 <div class="">
-<img src="" alt="">
+<img src="icons/176x176/Beregner_Sort.png" class="img-fluid mx-auto d-block" alt="">
 <h3>Book rådgivingsmøde</h3> 
+
 <button>Book møde</button>
 </div>
 
 <div class="">
-<img src="" alt="">
+<img src="icons/176x176/Beregner_Sort.png" class="img-fluid mx-auto d-block" alt="">
 <h3>Log på netbank</h3>
-<button>Netbank</button>
-</div> 
+<button >Netbank</button>
+</div>
 
 <div class="">
-<img src="" alt="">
+<img src="icons/176x176/Beregner_Sort.png" class="img-fluid mx-auto d-block" alt="">
 <h3>Kontakt os</h3>
 <button>Kontakt</button>
 </div>
@@ -162,6 +172,9 @@
 <div class="offset-lg-3 col-md-2 col-sm-6 life_box" style="background-color: red;">
 	<h3>Pensioneres</h3>
 	<a href="#">Læs mere</a>
+	<div class="overlay">
+    <div class="text">Hello World</div>
+  </div>
 </div>
 <div class="col-md-2 col-sm-6 life_box" style="background-color: red;">
 	<h3>Købe bolig</h3>
@@ -180,22 +193,22 @@
 		<h3>Få rådgivning der passer til dine behov</h3>
 		<p>Har du spørgsmål, så kontakt os på</p>
 		<a href="tel:24853733">+45 24853733>
-	</div>
+	</a></div><a href="tel:24853733">
 	<div class="col-md-6"> 
 	<img src="#" alt=""> 
 	<p>test</p>
 	</div>
-	</div>
+	</a></div><a href="tel:24853733"></a>
 </aside>
-<div class="col-12 row"> 
-<div class="offset-2">
+<div class="col-12 row"><div class="offset-2"> 
+<a href="tel:24853733">
 	<h3>Nyheder</h3>
-	<div>
+	</a><div><a href="tel:24853733">
 	<img src="#" alt=""> 
 	<p>Nyheder</p>
 	<H3>Overskrift</H3>
 	<p>brødtekst</p>
-	<a href="#">Læs mere</a>
+	</a><a href="#">Læs mere</a>
 	</div>
 	<div>
 	<img src="#" alt=""> 
@@ -214,6 +227,7 @@
 	
 </div>
 </div>
+</div>
 </main>
 <!--cta boks der skal ses på alle sider-->
 <aside class="row"> 
@@ -229,6 +243,8 @@
 </div>
 
 </aside>
+
+
 <!--END-->
 
 <!--footer-->
@@ -317,5 +333,5 @@
   AOS.init();
 </script>-->
 	
-</div></div></body>
+</body>
 </html>

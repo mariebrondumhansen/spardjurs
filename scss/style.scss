@@ -1,7 +1,7 @@
 /* Scss Document */
-/*Her difinere jeg mine scass variabler*/
+/*Her difinere jeg mine scass farve variabler - disse er de farver som banken skal vælge inden laver deres website*/
 $font-stack: Helvetica, sans-serif;
-$brand1: #62606f;
+$brand1: #a70000;
 $brand1-15: #41404a; 
 $brand1-25: #2b2a30; 
 $brand2: #62606f;
@@ -19,13 +19,19 @@ h1
         font-weight: 800;	
         line-height: 80px;
 }
+h2{
+    font-size: 1.875rem;
+}
 body {
   font: 100% $font-stack;
   color: $brand1;
   background-color: $bg-color;
 }
 
-.x {color: $brand1;}
+.brand1-bg {background-color: $brand1;}
+.brand1{color: $brand1;}
+
+
 .ctabtn{background-color: $cta;}
 
 .button {
